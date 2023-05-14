@@ -1,0 +1,8 @@
+.*
+!.gitignore
+*.csv
+*.txt
+output
+*.log
+
+!.github
