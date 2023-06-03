@@ -1,0 +1,78 @@
+/* styles.css */
+
+/* body background  */
+body .stApp {
+    background-color: black;
+}
+
+
+/* title - Odia Gen AI  */
+.title {
+    text-align: center; 
+    margin-top: 100px; 
+    margin-bottom: 100px;
+}
+
+
+/* text in web  */
+.text {
+    padding-bottom: 10px;
+}
+
+
+/* div which contains all the 3 columns */
+.css-ocqkz7.e1tzin5v3 {
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+
+/* column 1 */
+/* removing press enter to apply text  */
+.css-1if5ada {
+    visibility: hidden;
+}
+/* editing Input text box  */
+input.st-bg.st-c1.st-c2.st-c3.st-c4.st-c5.st-c6.st-c7.st-c8.st-c9.st-ca.st-b8.st-cb.st-cc.st-cd.st-ce.st-cf.st-cg.st-ch.st-ci.st-ae.st-af.st-ag.st-cj.st-ai.st-aj.st-c0.st-ck.st-cl.st-cm {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+/* column 2 */
+/* editing for browse file */
+/* removing drag drop area */
+.css-u8hs99.exg6vvm14 {
+    display: none;
+}
+/* editing the div which wraps the browse button */
+section.css-z8f339.exg6vvm15 {
+    padding: 0rem;
+    margin-left: -1.2rem;
+}
+/* editing the browse buttton */
+button.css-b3z5c9.edgvbvh10 {
+    width: 100%;
+}
+/* editing the div which shows the attached files */
+.css-fis6aj.exg6vvm10 {
+    overflow: auto;
+    width: 20rem;
+    margin-left: -5rem;
+}
+
+/* column 3 */
+/* Enter button  */
+div.stButton > button:first-child {
+    background-color: rgb(204, 49, 49);
+    width: 100%;
+    margin-top: 32px;
+}
+.css-b3z5c9 {
+    padding: 0.5rem 0.75rem;
+}
+
+
+/* text area */
+.stTextArea {
+    margin-top: 1rem;
+}
