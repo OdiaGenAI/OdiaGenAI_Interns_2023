@@ -49,23 +49,67 @@ section.css-z8f339.exg6vvm15 {
     padding: 0rem;
     margin-left: -1.2rem;
 }
+/* editing the div which wraps the browse button */
+section.css-y96f5t.exg6vvm15 {
+    padding: 0;
+    margin-left: -1.2rem;
+}
 /* editing the browse buttton */
 button.css-b3z5c9.edgvbvh10 {
     width: 100%;
 }
 /* editing the div which shows the attached files */
 .css-fis6aj.exg6vvm10 {
-    overflow: auto;
+    overflow-x: auto;
+    white-space: nowrap;
     width: 20rem;
     margin-left: -5rem;
 }
 
 /* column 3 */
+
+/* Save button */
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:hover {
+    border-color: rgb(0,255,127) !important;
+    color: rgb(0,255,127) !important;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:active {
+    color: rgb(255, 255, 255);
+    border-color: rgb(0,255,127) !important;
+    background-color: rgb(0,255,127) !important;
+}
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:focus:not(:active) {
+    border-color: rgb(0,255,127) !important;
+    color: rgb(0,255,127) !important;
+}
+
+
+
 /* Enter button  */
-div.stButton > button:first-child {
-    background-color: rgb(204, 49, 49);
-    width: 100%;
-    margin-top: 32px;
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div > div > button {
+    background-color: rgb(204, 49, 49) !important;
+    width: 100% !important;
+    margin-top: 32px !important;
+}
+
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div > div > button:hover,
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div > div > button:focus
+{
+    color : black !important;
+}
+
+.btn-clear {
+    background-color: rgb(204, 49, 49) !important;
+    width: 100% !important;
+}
+
+
+
+
+
+.css-j5r0tf.e1tzin5v1 {
+    height: fit-content;
 }
 .css-b3z5c9 {
     padding: 0.5rem 0.75rem;
@@ -76,3 +120,7 @@ div.stButton > button:first-child {
 .stTextArea {
     margin-top: 1rem;
 }
+
+
+
+
