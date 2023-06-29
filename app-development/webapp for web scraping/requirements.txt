@@ -1,0 +1,8 @@
+streamlit
+beautifulsoup4
+docx2txt
+pypdf2
+pdfplumber
+justext
+Pillow
+requests
