@@ -1,126 +1,75 @@
-/* styles.css */
-
-/* body background  */
-body .stApp {
-    background-color: black;
+.e1tzin5v2 >.row-widget.stButton > button {
+    width: 100%;
+    height: 100%;
+    
 }
 
 
-/* title - Odia Gen AI  */
-.title {
-    text-align: center; 
-    margin-top: 100px; 
-    margin-bottom: 100px;
+/* div that wraps all 3 columns */
+.e1tzin5v3 {
+    width: 70%;
+    margin-left: 15%;
 }
 
 
-/* text in web  */
-.text {
-    padding-bottom: 10px;
-}
 
 
-/* div which contains all the 3 columns */
-.css-ocqkz7.e1tzin5v3 {
-    width: 75%;
-    margin-left: 12.5%;
-}
 
-
-/* column 1 */
-/* removing press enter to apply text  */
-.css-1if5ada {
-    visibility: hidden;
-}
-/* editing Input text box  */
-input.st-bg.st-c1.st-c2.st-c3.st-c4.st-c5.st-c6.st-c7.st-c8.st-c9.st-ca.st-b8.st-cb.st-cc.st-cd.st-ce.st-cf.st-cg.st-ch.st-ci.st-ae.st-af.st-ag.st-cj.st-ai.st-aj.st-c0.st-ck.st-cl.st-cm {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
-}
-
-/* column 2 */
-/* editing for browse file */
-/* removing drag drop area */
-.css-u8hs99.exg6vvm14 {
+/* drag drop div */
+.exg6vvm14 {
     display: none;
 }
-/* editing the div which wraps the browse button */
-section.css-z8f339.exg6vvm15 {
-    padding: 0rem;
-    margin-left: -1.2rem;
-}
-/* editing the div which wraps the browse button */
-section.css-y96f5t.exg6vvm15 {
-    padding: 0;
-    margin-left: -1.2rem;
-}
-/* editing the browse buttton */
-button.css-b3z5c9.edgvbvh10 {
+/* resizing the attach button  */
+.exg6vvm15 > button {
     width: 100%;
+    height: 100%;
 }
-/* editing the div which shows the attached files */
-.css-fis6aj.exg6vvm10 {
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 20rem;
-    margin-left: -5rem;
-}
-
-/* column 3 */
-
-/* Save button */
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:hover {
-    border-color: rgb(0,255,127) !important;
-    color: rgb(0,255,127) !important;
+/* div which wraps attach button */
+.exg6vvm15 {
+    padding: 0;
+    margin-left: -15px;
+    height: 40px;
 }
 
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:active {
-    color: rgb(255, 255, 255);
-    border-color: rgb(0,255,127) !important;
-    background-color: rgb(0,255,127) !important;
+/* div that wraps the enter button  */
+.e1tzin5v2 >.row-widget.stButton  {
+    height: 40px;
 }
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:focus:not(:active) {
-    border-color: rgb(0,255,127) !important;
-    color: rgb(0,255,127) !important;
+
+/* resizing the enter button  */
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > div > button{
+    background: rgb(204, 49, 49);
+    color: black;
+}
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div:nth-child(2) > div > button :hover,:active{
+    color: white;
 }
 
 
-
-/* Enter button  */
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div > div > button {
-    background-color: rgb(204, 49, 49) !important;
-    width: 100% !important;
-    margin-top: 32px !important;
+/* save button */
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div > div > div > button {
+    background-color: rgb(0,255,127);
+    color: black;
+    height: 40px;
+    margin-top: 20px;
+    width: 70%;
+    margin-left: 30%;
+}
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(4) > div:nth-child(1) > div:nth-child(1) > div > div > div > button:hover, :active {
+    border: rgb(0,255,127);
+    color: white;
+    
 }
 
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div > div > button:hover,
-#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div.block-container.css-z5fcl4.egzxvld4 > div:nth-child(1) > div > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > div > div > div > button:focus
-{
-    color : black !important;
+/* clear button  */
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div > div > div > button {
+    background: rgb(204, 49, 49);
+    color: black;
+    height: 40px;
+    margin-top: 20px;
+    width: 70%;
+    margin-right: 30%;
 }
-
-.btn-clear {
-    background-color: rgb(204, 49, 49) !important;
-    width: 100% !important;
+#root > div:nth-child(1) > div.withScreencast > div > div > div > section > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div > div > div > button:hover, :active {
+    color: white;
 }
-
-
-
-
-
-.css-j5r0tf.e1tzin5v1 {
-    height: fit-content;
-}
-.css-b3z5c9 {
-    padding: 0.5rem 0.75rem;
-}
-
-
-/* text area */
-.stTextArea {
-    margin-top: 1rem;
-}
-
-
-
-
