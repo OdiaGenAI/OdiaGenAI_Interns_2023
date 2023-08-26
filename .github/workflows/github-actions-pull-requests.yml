@@ -19,16 +19,12 @@ jobs:
           run: |
             git config --global --add safe.directory /app
             cd /app
-            ls -la
-            git --version
-            echo "$SHELL"
-            pre-commit --version
+            echo $0
             set -x
             status=0
             pre-commit run --all-files || status=$?
             # git config --global --add safe.directory /app
             if [[ $status -ne 0 ]]; then
-              # cat /root/.cache/pre-commit/pre-commit.log
               exit 1 # fail the job
             fi
       - run: echo "🍏 This job's status is ${{ job.status }}."

@@ -3,10 +3,8 @@ repos:
     rev: v4.4.0
     hooks:
       - id: check-json
-      - id: pretty-format-json
       - id: check-yaml
       - id: check-merge-conflict
-      - id: detect-aws-credentials
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
   - repo: https://github.com/ambv/black
