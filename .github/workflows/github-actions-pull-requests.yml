@@ -19,11 +19,11 @@ jobs:
           run: |
             git config --global --add safe.directory /app
             cd /app
-            echo $0
+            echo $0 # checks for the shell type
             set -x
             status=0
             pre-commit run --all-files || status=$?
-            if [ $status != 0 ]; then
+            if [ $status -eq 0 ]; then
               exit 1 # fail the job
             fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
