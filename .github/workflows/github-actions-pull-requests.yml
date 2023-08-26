@@ -16,6 +16,7 @@ jobs:
           image: swateekj/verify-pre-commit:latest
           options: -v ${{ github.workspace }}:/app
           run: |
+            bash
             cd app
             set -x
             status=0
