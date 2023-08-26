@@ -16,6 +16,7 @@ jobs:
           image: swateekj/verify-pre-commit:latest
           options: -v ${{ github.workspace }}:/app
           run: |
+            cd app
             set -x
             status=0
             pre-commit run --all-files || status=$?
