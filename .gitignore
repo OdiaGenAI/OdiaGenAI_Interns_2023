@@ -6,3 +6,4 @@ output
 *.log
 
 !.github
+!.pre-commit-config.yaml

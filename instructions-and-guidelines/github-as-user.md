@@ -122,7 +122,7 @@ git config user.email "swateek08@gmail.com"
 3. **Attach an assignee** (or multiple assignees) on the right side panel
 4. ******Provide a label****** that describes the issue best
 5. Add a milestone if its applicable
-6. Click Save 
+6. Click Save
 
 ### Working on an Issue
 
@@ -150,7 +150,7 @@ git checkout <newly-created-branch>
 ```bash
 git add -A
 # where, #3 is your issue number
-git commit -m "#3 - my commit message" 
+git commit -m "#3 - my commit message"
 git push
 ```
 
@@ -161,7 +161,7 @@ git push
 1. Open the GitHub repository in your browser, and select the branch you intend to raise a PR for from the dropdown.
 2. Once the branch is selected, a box comes up on the with the text ********************************************Compare & Pull Request********************************************
 3. Mention a merge request title, this also starts with the issue number
-4. Provide appropriate description 
+4. Provide appropriate description
 5. Add reviewers who’ll review the PR
 6. Add assignees as yourself, since you are the one who’s creating a code change
 7. Click the green button **************************************Create Pull Request**************************************
