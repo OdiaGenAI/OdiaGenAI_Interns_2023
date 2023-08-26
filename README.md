@@ -6,6 +6,11 @@ This repo used by the OdiaGenAI interns selected for Generative AI and LLM proje
 
 # How to use this repo?
 
+```bash
+# Install pre-commit
+pre-commit install
+```
+
 Please refer to the instruction guidelines placed in [Instructions_and_Guidelines](./instructions-and-guidelines/README.md).
 
 ## Interns
