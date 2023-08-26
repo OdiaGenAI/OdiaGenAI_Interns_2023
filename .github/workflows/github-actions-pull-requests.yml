@@ -6,6 +6,7 @@ on:
       - main
 jobs:
   pre-commit-check:
+    name: Checking if pre-commit is verified
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -16,6 +17,7 @@ jobs:
           image: swateekj/verify-pre-commit:latest
           options: -v ${{ github.workspace }}:/app
           run: |
+            git config --global --add safe.directory /app
             cd /app
             ls -la
             git --version
@@ -24,7 +26,7 @@ jobs:
             set -x
             status=0
             pre-commit run --all-files || status=$?
-            cat /root/.cache/pre-commit/pre-commit.log
+            # git config --global --add safe.directory /app
             if [[ $status -ne 0 ]]; then
               # cat /root/.cache/pre-commit/pre-commit.log
               exit 1 # fail the job
