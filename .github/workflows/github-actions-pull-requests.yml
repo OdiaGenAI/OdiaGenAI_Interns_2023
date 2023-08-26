@@ -2,27 +2,25 @@ name: Pull Request Checks
 run-name: ${{ github.actor }} is testing if PreCommits have run
 on:
   pull_request:
-    # Sequence of patterns matched against refs/heads
     branches:
       - main
 jobs:
-  Precommit-Checks:
-    runs-on: swateekj/verify-pre-commit:latest
+  pre-commit-check:
+    runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
         uses: actions/checkout@v3
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: Running pre-commit check script
-        run: |
-          set -x
-          status=0
-          pre-commit run --all-files || status=$?
-          if [[ $status -ne 0 ]]; then
-            # cat /root/.cache/pre-commit/pre-commit.log
-            exit 1 # fail the job
-          fi
+      - name: Fetching docker to test if pre-commit has run
+        uses: addnab/docker-run-action@v3
+        with:
+          image: swateekj/verify-pre-commit:latest
+          options: -v ${{ github.workspace }}:/app
+          run: |
+            set -x
+            status=0
+            pre-commit run --all-files || status=$?
+            if [[ $status -ne 0 ]]; then
+              # cat /root/.cache/pre-commit/pre-commit.log
+              exit 1 # fail the job
+            fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
