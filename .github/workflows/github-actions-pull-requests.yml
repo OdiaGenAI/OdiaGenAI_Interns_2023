@@ -1,5 +1,5 @@
 name: Pull Request Checks
-run-name: ${{ github.actor }} is testing if pre-commit has run on code commit
+run-name: ${{ github.actor }} is checking if all PR criteria is met
 on:
   pull_request:
     branches:
@@ -20,9 +20,11 @@ jobs:
             ls -la
             git --version
             echo "$SHELL"
+            pre-commit --version
             set -x
             status=0
             pre-commit run --all-files || status=$?
+            cat /root/.cache/pre-commit/pre-commit.log
             if [[ $status -ne 0 ]]; then
               # cat /root/.cache/pre-commit/pre-commit.log
               exit 1 # fail the job
