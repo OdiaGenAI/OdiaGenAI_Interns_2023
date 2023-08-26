@@ -23,8 +23,7 @@ jobs:
             set -x
             status=0
             pre-commit run --all-files || status=$?
-            # git config --global --add safe.directory /app
-            if [[ $status -ne 0 ]]; then
+            if [ $status != 0 ]; then
               exit 1 # fail the job
             fi
       - run: echo "🍏 This job's status is ${{ job.status }}."
