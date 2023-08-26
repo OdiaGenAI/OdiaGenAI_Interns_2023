@@ -1,5 +1,5 @@
 name: Pull Request Checks
-run-name: ${{ github.actor }} is testing if PreCommits have run
+run-name: ${{ github.actor }} is testing if pre-commit has run on code commit
 on:
   pull_request:
     branches:
@@ -18,7 +18,8 @@ jobs:
           run: |
             cd /app
             ls -la
-            echo "Hi"
+            git --version
+            echo "$SHELL"
             set -x
             status=0
             pre-commit run --all-files || status=$?
